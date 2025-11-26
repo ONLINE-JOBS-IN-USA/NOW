@@ -1,0 +1,167 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="gEJGGOE9nj80hxIYjNPq-b1DmONzj-3zSyRV3tR6FWY" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JOBS</title>
+<style>
+  body {
+    background-color: black;
+    background-image: url('https://krampah.com/picture2/k1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-image 1s ease-in-out;
+    color: white;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    flex: 1;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+
+  footer {
+    background-color: #f25b00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .sale_banner_orange {
+    background: linear-gradient(to bottom, #f49300 0%, #f25b00 100%);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+    text-align: center;
+    font: bold 16px/36px sans-serif;
+    height: 36px;
+  }
+
+  .sale_banner_orange a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Button colors */
+  .black-button {
+    background-color: black;
+    border: 1px solid white;
+  }
+
+  .green-button {
+    background-color: green;
+  }
+
+  .blue-button {
+    background-color: blue;
+    color: black;
+  }
+
+  .yellow-button {
+    background-color: yellow;
+    color: black;
+  }
+
+  .red-button {
+    background-color: red;
+  }
+
+  .bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  marquee {
+    color: white;
+    font-weight: bold;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="sale_banner_orange" style="border-top:none">
+  <a href="#">APPLY FROM AFRICA</a>
+</div>
+
+<b><marquee>Securing online jobs for workers and students in Africa</marquee></b>
+
+<div class="container">
+  <button class="black-button" onclick="goToWebsite('https://d2hbz770.caspio.com/dp/cf41f00032e991256f76434faf9a ')">ONLINE JOBS IN USA</button><br><p>
+  <button class="black-button" onclick="goToWebsite('https://d2hbz770.caspio.com/dp/cf41f00032e991256f76434faf9a ')">ONLINE JOBS IN CANADA</button><br>
+ 
+</div>
+
+<footer>
+<b>WIKIPEDIA-<b>AIRBNB-<b>EXPEDIA-<b>IKEA<b> <p>
+  <p><b>EMAIL US:</b> jobs@USAtoday.com</p>
+  <p>&copy; 2025 usa-today.com all rights reserved.</p>
+</footer>
+
+<script>
+  function goToWebsite(url) {
+    window.location.href = url;
+  }
+
+  const images = [
+    'https://krampah.com/picture1/ikea.jpg',
+    'https://krampah.com/picture1/expedia.png',
+    'https://krampah.com/picture1/airbnb.jpg',
+    'https://krampah.com/picture1/wiki.png',
+    'https://krampah.com/picture1/ikea.jpg',
+    'https://krampah.com/picture1/airbnb.jpg'
+  ];
+
+  let currentIndex = 0;
+
+  function changeBackground() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+  }
+
+  setInterval(changeBackground, 3000);
+</script>
+
+</body>
+</html>
